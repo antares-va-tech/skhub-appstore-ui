@@ -470,7 +470,7 @@ class SnRegister extends React.Component {
                   autoComplete="off"
                   helperText={errorObj.skylink ? 'Skylink URL is a mandatory field.' : 'Example: https://siasky.net/EADCbQJDO8cFkf-fawBrKI56uOdrdIVwMQIpgsIiLSdE5A'}
                   onInput={e => {
-                    e.target.value = e.target.value.slice(0, 46);
+                    e.target.value = e.target.value.slice(0, 200);
                   }}
                   onChange={this.handleChange}
                 />
